@@ -1,6 +1,6 @@
 # Gestion-Biblioteca
 Descripción
-  Este proyecto implementa un sistema de gestión de una biblioteca utilizando varios patrones de diseño de software. La biblioteca permite agregar, eliminar, prestar y devolver libros, así como       registrar usuarios y notificarles cuando un libro se vuelve disponible. Los patrones de diseño utilizados incluyen el patrón estructural Decorator, el patrón creacional Factory Method y el patrón   de comportamiento Observer.
+  Este proyecto implementa un sistema de gestión de una biblioteca utilizando varios patrones de diseño de software. La biblioteca permite agregar, eliminar, prestar y devolver libros, así como       registrar usuarios y notificarles cuando un   libro se vuelve disponible. Los patrones de diseño utilizados incluyen el patrón estructural Decorator, el patrón creacional Factory Method y el patrón   de comportamiento Observer.
 
 Patrones de Diseño Implementados
 - Patrón Estructural: Decorator
@@ -22,3 +22,9 @@ Funcionalidades
 
 Requisitos
   Python 3.x
+
+Instalación
+  1. Clona el repositorio
+     git clone 
+  3. Navega al directorio del proyecto
+  4. 
