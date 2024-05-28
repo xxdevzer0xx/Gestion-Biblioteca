@@ -25,6 +25,50 @@ Requisitos
 
 Instalación
   1. Clona el repositorio
-     git clone 
-  3. Navega al directorio del proyecto
-  4. 
+     git clone https://github.com/xxdevzer0xx/Gestion-Biblioteca.git
+  2. Navega al directorio del proyecto
+     Gestion-Biblioteca
+     
+Ejecución
+  Para ejecutar la aplicación, simplemente ejecuta el archivo main.py desde consola
+  python -m presentacion.main
+
+Uso
+  Al ejecutar la aplicación, se mostrará un menú de opciones:
+  
+--- MENÚ DE OPCIONES ---
+1. Agregar libro físico
+2. Agregar libro electrónico
+3. Eliminar libro
+4. Prestar libro
+5. Devolver libro
+6. Mostrar libros disponibles
+7. Registrar usuarios como observadores
+8. Salir
+
+Sigue las instrucciones en pantalla para interactuar con la biblioteca.
+
+Ejemplo de Uso:
+
+Agregar un Libro Físico
+Selecciona la opción 1 en el menú.
+Ingresa el título y el autor del libro cuando se te solicite.
+
+Prestar un Libro
+Selecciona la opción 4 en el menú.
+Ingresa el título del libro que deseas prestar.
+Ingresa el nombre del usuario que prestará el libro.
+
+Devolver un Libro
+Selecciona la opción 5 en el menú.
+Ingresa el título del libro que deseas devolver.
+
+Mostrar Libros Disponibles
+Selecciona la opción 6 en el menú para ver una lista de libros disponibles.
+
+Registrar Usuarios como Observadores
+Selecciona la opción 7 en el menú.
+Ingresa el número de usuarios que deseas registrar y sus nombres.
+
+
+
