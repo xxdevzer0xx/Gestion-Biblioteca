@@ -1,9 +1,11 @@
 # Gestion-Biblioteca
 
 Descripción
+
 Este proyecto es un sistema de gestión de biblioteca diseñado para gestionar múltiples aspectos como el catálogo de libros, la gestión de membresías, los préstamos y devoluciones, y las recomendaciones de lectura. El objetivo es proporcionar un sistema robusto y eficiente utilizando buenas prácticas de ingeniería de software cumpliendo con los principios SOLID, varios patrones de diseño y una arquitectura de 3 capas para garantizar un código mantenible, extensible y escalable.
 
 Características
+
 - Gestión de catálogo de libros.
 - Administración de membresías.
 - Sistema de préstamos y devoluciones.
@@ -11,6 +13,7 @@ Características
 - Gestión de eventos y talleres.
 
 Arquitectura
+
 El sistema sigue una arquitectura de 3 capas:
 
 Capa de Presentación: Maneja la interfaz de usuario y las interacciones con el usuario.
