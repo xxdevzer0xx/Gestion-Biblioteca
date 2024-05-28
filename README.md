@@ -1,24 +1,57 @@
 # Gestion-Biblioteca
+Tabla de Contenidos
 Descripción
-  Este proyecto implementa un sistema de gestión de una biblioteca utilizando varios patrones de diseño de software. La biblioteca permite agregar, eliminar, prestar y devolver libros, así como       registrar usuarios y notificarles cuando un   libro se vuelve disponible. Los patrones de diseño utilizados incluyen el patrón estructural Decorator, el patrón creacional Factory Method y el patrón   de comportamiento Observer.
+Características
+Arquitectura
+Principios SOLID
+Patrones de Diseño
+Instalación
+Uso
+Contribuciones
+Licencia
+Descripción
+Este proyecto es un sistema de gestión de biblioteca diseñado para gestionar múltiples aspectos como el catálogo de libros, la gestión de membresías, los préstamos y devoluciones, y las recomendaciones de lectura. El objetivo es proporcionar un sistema robusto y eficiente utilizando buenas prácticas de ingeniería de software.
 
-Patrones de Diseño Implementados
-- Patrón Estructural: Decorator
-  Se utiliza para registrar eventos de adición, eliminación, préstamo y devolución de libros.
+Características
+Gestión de catálogo de libros.
+Administración de membresías.
+Sistema de préstamos y devoluciones.
+Recomendaciones de lectura personalizadas.
+Gestión de eventos y talleres.
+Arquitectura
+El sistema sigue una arquitectura de 3 capas:
 
-- Patrón Creacional: Factory Method
-  Facilita la creación de diferentes tipos de libros (físicos y electrónicos).
+Capa de Presentación: Maneja la interfaz de usuario y las interacciones con el usuario.
+Capa de Negocio: Contiene la lógica de negocio y las reglas del sistema.
+Capa de Datos: Gestiona el acceso a la base de datos y las operaciones de persistencia.
+Principios SOLID
+S - Responsabilidad Única (Single Responsibility Principle)
+Cada clase tiene una única responsabilidad. Por ejemplo, la clase CatalogService se encarga solo de las operaciones relacionadas con el catálogo de libros.
 
-- Patrón de Comportamiento: Observer
-  Permite notificar a los usuarios registrados cuando un libro se vuelve disponible.
+O - Abierto/Cerrado (Open/Closed Principle)
+El sistema está diseñado para ser extensible sin modificar el código existente. Por ejemplo, el patrón de diseño Strategy se utiliza para las recomendaciones de lectura, permitiendo agregar nuevos algoritmos de recomendación sin cambiar los existentes.
 
-Funcionalidades
-  Agregar Libro Físico o Electrónico: Permite agregar libros a la biblioteca.
-  Eliminar Libro: Permite eliminar libros de la biblioteca.
-  Prestar Libro: Permite prestar libros a los usuarios y notificarlos.
-  Devolver Libro: Permite devolver libros prestados.
-  Mostrar Libros Disponibles: Muestra una lista de libros disponibles en la biblioteca.
-  Registrar Usuarios como Observadores: Permite registrar usuarios que recibirán notificaciones cuando un libro esté disponible.
+L - Sustitución de Liskov (Liskov Substitution Principle)
+Las clases derivadas pueden ser sustituidas por sus clases base sin alterar el comportamiento correcto del programa.
+
+I - Segregación de Interfaces (Interface Segregation Principle)
+Se crean interfaces específicas de clientes, evitando interfaces grandes y monolíticas. Por ejemplo, IBookRepository y IMembershipRepository.
+
+D - Inversión de Dependencias (Dependency Inversion Principle)
+El sistema depende de abstracciones y no de concretos. Las dependencias son inyectadas, permitiendo un desacoplamiento fuerte entre las clases.
+
+Patrones de Diseño
+Singleton
+Usado para la conexión a la base de datos, asegurando que solo exista una instancia de la conexión a lo largo del ciclo de vida de la aplicación.
+
+Strategy
+Implementado en el servicio de recomendaciones de lectura para permitir diferentes algoritmos de recomendación.
+
+Repository
+Usado para la abstracción de la capa de datos, proporcionando una interfaz limpia para las operaciones de acceso a la base de datos.
+
+Factory
+Utilizado para la creación de objetos, especialmente en la capa de negocio para gestionar las diversas estrategias de recomendación.
 
 Requisitos
   Python 3.x
