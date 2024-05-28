@@ -54,19 +54,24 @@ Factory
 Utilizado para la creación de objetos, especialmente en la capa de negocio para gestionar las diversas estrategias de recomendación.
 
 Requisitos
+
   Python 3.x
 
 Instalación
+
   1. Clona el repositorio
      git clone https://github.com/xxdevzer0xx/Gestion-Biblioteca.git
   2. Navega al directorio del proyecto
      Gestion-Biblioteca
      
 Ejecución
+
   Para ejecutar la aplicación, simplemente ejecuta el archivo main.py desde consola
+
   python -m presentacion.main
 
 Uso
+
   Al ejecutar la aplicación, se mostrará un menú de opciones:
   
 --- MENÚ DE OPCIONES ---
