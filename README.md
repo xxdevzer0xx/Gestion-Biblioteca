@@ -1,30 +1,26 @@
 # Gestion-Biblioteca
-Tabla de Contenidos
+
 Descripción
-Características
-Arquitectura
-Principios SOLID
-Patrones de Diseño
-Instalación
-Uso
-Contribuciones
-Licencia
-Descripción
-Este proyecto es un sistema de gestión de biblioteca diseñado para gestionar múltiples aspectos como el catálogo de libros, la gestión de membresías, los préstamos y devoluciones, y las recomendaciones de lectura. El objetivo es proporcionar un sistema robusto y eficiente utilizando buenas prácticas de ingeniería de software.
+Este proyecto es un sistema de gestión de biblioteca diseñado para gestionar múltiples aspectos como el catálogo de libros, la gestión de membresías, los préstamos y devoluciones, y las recomendaciones de lectura. El objetivo es proporcionar un sistema robusto y eficiente utilizando buenas prácticas de ingeniería de software cumpliendo con los principios SOLID, varios patrones de diseño y una arquitectura de 3 capas para garantizar un código mantenible, extensible y escalable.
 
 Características
-Gestión de catálogo de libros.
-Administración de membresías.
-Sistema de préstamos y devoluciones.
-Recomendaciones de lectura personalizadas.
-Gestión de eventos y talleres.
+- Gestión de catálogo de libros.
+- Administración de membresías.
+- Sistema de préstamos y devoluciones.
+- Recomendaciones de lectura personalizadas.
+- Gestión de eventos y talleres.
+
 Arquitectura
 El sistema sigue una arquitectura de 3 capas:
 
 Capa de Presentación: Maneja la interfaz de usuario y las interacciones con el usuario.
+
 Capa de Negocio: Contiene la lógica de negocio y las reglas del sistema.
+
 Capa de Datos: Gestiona el acceso a la base de datos y las operaciones de persistencia.
+
 Principios SOLID
+
 S - Responsabilidad Única (Single Responsibility Principle)
 Cada clase tiene una única responsabilidad. Por ejemplo, la clase CatalogService se encarga solo de las operaciones relacionadas con el catálogo de libros.
 
@@ -41,6 +37,7 @@ D - Inversión de Dependencias (Dependency Inversion Principle)
 El sistema depende de abstracciones y no de concretos. Las dependencias son inyectadas, permitiendo un desacoplamiento fuerte entre las clases.
 
 Patrones de Diseño
+
 Singleton
 Usado para la conexión a la base de datos, asegurando que solo exista una instancia de la conexión a lo largo del ciclo de vida de la aplicación.
 
